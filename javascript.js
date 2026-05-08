@@ -1,27 +1,32 @@
 
-let choices = ["rock", "paper", "scissors"]
-let humanScore = 0
-let computerScore = 0
-let winTable = {
+const choices = ["rock", "paper", "scissors"];
+let humanScore = 0;
+let computerScore = 0;
+const winTable = {
     "rock": "scissors",
     "paper": "rock",
     "scissors": "paper"
-}
+};
 
-let promptComputer = () => {
+const promptComputer = () => { //return "rock, paper, or scissors"
     let computerChoice = choices[Math.floor(Math.random() * 3)]
-    return computerChoice
-}
+    return computerChoice;
+};
 
 
-let game = () => { //called when player chooses a choice
+const handleButtonGroup = (event) => {
+    const pressed = event.target.id;
     
 }
 
-let buttonGroup = document.querySelector('.buttonContainer')
+const buttonGroup = document.querySelector('.buttonContainer');
+buttonGroup.addEventListener("click", handleButtonGroup);
 
-buttonGroup.addEventListener()
 
 
+const consoleDisplay = document.querySelector('.consoleDisplay');
+const printConsole = (msg) => {
+    consoleDisplay.textContent = msg;
+}
 
 
