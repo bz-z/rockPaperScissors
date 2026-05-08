@@ -1,0 +1,35 @@
+div {
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    outline: 2px solid white;
+}
+
+.scoreDisplay {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.choice {
+    width: 50%;
+}
+
+.choosing {
+    height: 300px;
+    display: flex;
+    align-items: center;     
+    justify-content: center; 
+}
+
+.buttonContainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.selectionButton {
+    flex: 1;
+    height: 200px;
+    font-size: 50px;
+}
